@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "filetransferlib"
+version = "0.1.0"
+authors = [
+    {name = "Seu Nome", email = "seu.email@example.com"}
+]
+description = "Biblioteca para transferência de arquivos entre Azure Data Lake e pastas de rede Windows."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities"
+]
+
+[project.urls]
+Homepage = "https://github.com/renatoub/filetransferlib"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools]
+
